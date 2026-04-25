@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alp-codec"
+version = "0.8.0"
+description = "Pure Python implementation of ALP (Adaptive Lossless floating-Point) compression — port of QTSurfer/alp-java."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Wualabs LTD" }]
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Archiving :: Compression",
+]
+dependencies = [
+    "numpy>=1.26",
+]
+keywords = ["alp", "compression", "floating-point", "time-series", "columnar", "codec"]
+
+[project.urls]
+Homepage = "https://github.com/QTSurfer/alp-py"
+Documentation = "https://github.com/QTSurfer/alp-py#readme"
+Repository = "https://github.com/QTSurfer/alp-py"
+Issues = "https://github.com/QTSurfer/alp-py/issues"
+"Reference (Java)" = "https://github.com/QTSurfer/alp-java"
+Paper = "https://dl.acm.org/doi/10.1145/3626717"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["alp"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
