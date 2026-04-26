@@ -13,7 +13,7 @@ Python port of the [QTSurfer/alp-java](https://github.com/QTSurfer/alp-java) ref
 
 ## Status
 
-`0.8.0` — first published release, bit-exact aligned with `alp-java` 0.2.1. Encode + decode round-trip verified against fixtures emitted by the Java reference.
+Bit-exact aligned with [`alp-java`](https://github.com/QTSurfer/alp-java) — encode + decode round-trip verified against fixtures emitted by the Java reference. See the PyPI badge above for the latest version.
 
 ## Install
 
