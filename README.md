@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/QTSurfer/alp-py/actions/workflows/ci.yml/badge.svg)](https://github.com/QTSurfer/alp-py/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/alp-codec)](https://pypi.org/project/alp-codec/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/QTSurfer/alp-py/blob/main/LICENSE)
 
 Pure Python implementation of the **ALP** (Adaptive Lossless floating-Point) compression algorithm.
 
@@ -13,7 +13,7 @@ Python port of the [QTSurfer/alp-java](https://github.com/QTSurfer/alp-java) ref
 
 ## Status
 
-🚧 **Pre-release** — repository scaffold while we port the codec from Java. The first published release will be `0.8.0` to align with `alp-java`.
+`0.8.0` — first published release, bit-exact aligned with `alp-java` 0.2.1. Encode + decode round-trip verified against fixtures emitted by the Java reference.
 
 ## Install
 
@@ -21,7 +21,7 @@ Python port of the [QTSurfer/alp-java](https://github.com/QTSurfer/alp-java) ref
 pip install alp-codec
 ```
 
-## Usage (planned API)
+## Usage
 
 ```python
 import numpy as np
@@ -52,4 +52,4 @@ The algorithm picks an `(e, f)` pair per block such that `value × 10^e × 2^-f`
 
 ## License
 
-Copyright 2026 Wualabs LTD. Apache License 2.0 — see [LICENSE](LICENSE).
+Copyright 2026 Wualabs LTD. Apache License 2.0 — see [LICENSE](https://github.com/QTSurfer/alp-py/blob/main/LICENSE).

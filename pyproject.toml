@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "alp-codec"
-version = "0.8.0"
+version = "0.8.1"
 description = "Pure Python implementation of ALP (Adaptive Lossless floating-Point) compression — port of QTSurfer/alp-java."
 readme = "README.md"
 license = { text = "Apache-2.0" }

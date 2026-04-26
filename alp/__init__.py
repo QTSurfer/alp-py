@@ -34,7 +34,7 @@ from . import _bit_packing as bp
 from . import _encoder
 from ._constants import VECTOR_SIZE
 
-__version__ = "0.8.0"
+__version__ = "0.8.1"
 
 _SAMPLE_SIZE = 64
 
